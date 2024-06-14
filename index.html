@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Cars:</h1>
+    <h2 id="count-cars">0</h2>
+    <button id="increment" onclick="increment('cars')">INCREMENT</button>
+
+    <h1>Buses:</h1>
+    <h2 id="count-buses">0</h2>
+    <button id="increment" onclick="increment('buses')">INCREMENT</button>
+
+    <h1>Motorcycles:</h1>
+    <h2 id="count-motorcycles">0</h2>
+    <button id="increment" onclick="increment('motorcycles')">INCREMENT</button>
+    
+    <h1>Trucks:</h1> <!-- Asumiendo que el último debería ser Bicycles en lugar de un duplicado de Motorcycles -->
+    <h2 id="count-trucks">0</h2>
+    <button id="increment" onclick="increment('trucks')">INCREMENT</button>
+<br>
+<br>
+<br>
+    <button id="warning" onclick="deleteAllCounts()">DELETE</button>
+    <button id ="warning" onclick="downloadCount()">DOWNLOAD</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
